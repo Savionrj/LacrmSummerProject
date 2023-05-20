@@ -23,16 +23,17 @@
       .navbar {
         display: flex;
         flex-direction: column;
-        width: 104px;
-        height: 100%;
+        width: 100%;
+        height: 100vh;
         background-color: #000233;
-        position: absolute;
         color: white;
-        padding: 20px;
       }
 
       .side_bar {
+        justify-content: center;
         background-color: #000233;
+        position: fixed;
+        padding: 20px;
       }
 
       .header {
@@ -41,10 +42,10 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        background-color: #D9D9D9;
+        background-color: #CCCEFF;
         font-style: bold;
         font-family: sans-serif;
-        color: #000233;
+        color: white;
         text-align: center;
         height: 33%;
       }
@@ -52,12 +53,14 @@
       .content {
         display: flex;
         flex-direction: column;
-        margin-left: 144;
+        align-items: center;
         width: 100%;
+        margin-left: 4%;
       }
 
       .page {
         display: flex;
+        flex-direction: row;
         height: 100%;
       }
 
@@ -66,15 +69,30 @@
       }
 
       .icon {
+        display: flex;
+        justify-content: center;
         border-bottom: solid;
         margin-top: 150px;
-        width: 80px;
+        width: 75%;
         margin: auto;
+        padding-bottom: 20%;
       }
+
+      a {
+        transition: all 0.2s ease-in-out;
+        color: white;
+      }
+
+      a:hover {
+        color: #F2AC57;
+      }
+
+      #search {}
 
       main {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
         padding: 40px;
       }
@@ -104,7 +122,7 @@
         display: flex;
         flex-direction: column;
         justify-content: end;
-        width: 100%;
+        width: 95%;
         text-align: center;
         background-color: black;
         height: 400px;
@@ -121,7 +139,8 @@
       .blog_cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         background-color: white;
         width: 100%;
+        flex-wrap: wrap;
       }
